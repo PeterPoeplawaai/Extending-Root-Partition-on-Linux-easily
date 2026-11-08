@@ -1,8 +1,8 @@
-# Extending Root Partition (sda1) on Linux (any cloud instance)
+# Extending Root Partition (sda1) on Linux easily (any cloud instance)
 
-When extending the boot volume size in Oracle Cloud Infrastructure (OCI), your root disk (`/dev/sda`) expands, but intermediate boot/EFI partitions (`sda5`, `sda6`) may block direct in-place partition resizing. 
+When extending the boot volume size in for example Oracle Cloud Infrastructure (OCI), your root disk (`/dev/sda`) expands, but intermediate boot/EFI partitions (`sda5`, `sda6`) may block direct in-place partition resizing. 
 
-Using `growpart` (from `cloud-guest-utils`) safely handles the partition table adjustments without disturbing the boot configuration.
+Using `growpart` (from `cloud-guest-utils`) safely handles the partition table adjustments without disturbing the boot configuration. It gives you far less of a hassle than using `parted` ...
 
 ---
 
