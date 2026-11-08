@@ -56,9 +56,4 @@ Confirm that your root filesystem (`/`) reflects the increased storage capacity:
 
 ```bash
 df -h
-
-```
-
-```
-
 ```
